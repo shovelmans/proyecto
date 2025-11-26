@@ -1,0 +1,8 @@
+# 1️⃣ Construir la imagen con tu repo real
+docker build -t shovelman/mi-app-html:latest .
+
+# 2️⃣ Loguearte en Docker Hub
+docker login
+
+# 3️⃣ Subir la imagen a Docker Hub.
+docker push shovelman/mi-app-html:latest
