@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: mi-app-html
-          image: TU_USUARIO_DOCKERHUB/mi-app-html:latest
+          image: shovelman/mi-app-html:latest
           ports:
             - containerPort: 80
