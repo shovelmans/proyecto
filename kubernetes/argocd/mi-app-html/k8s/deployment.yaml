@@ -5,7 +5,7 @@ metadata:
   labels:
     app: mi-app-html
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: mi-app-html
