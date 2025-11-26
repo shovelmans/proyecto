@@ -7,5 +7,5 @@ kubectl get svc -n argocd
 kubectl get nodes -o wide
 
 
-#Para borrar
+#Para borrar.
 helm uninstall argocd -n argocd
