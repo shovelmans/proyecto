@@ -16,6 +16,12 @@ spec:
     spec:
       containers:
         - name: mi-app-html
-          image: shovelman/mi-app-html:latest9
+          image: shovelman/mi-app-html:latest
           ports:
             - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 9999  # ❌ puerto incorrecto para provocar fallo
+            initialDelaySeconds: 2
+            periodSeconds: 3
