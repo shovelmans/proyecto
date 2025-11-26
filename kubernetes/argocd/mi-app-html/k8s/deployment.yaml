@@ -6,7 +6,6 @@ metadata:
     app: mi-app-html
 spec:
   replicas: 2
-  progressDeadlineSeconds: 20   # <- CLAVE: plazo corto de progreso
   selector:
     matchLabels:
       app: mi-app-html
@@ -17,12 +16,6 @@ spec:
     spec:
       containers:
         - name: mi-app-html
-          image: shovelman/mi-app-html:v1
+          image: shovelman/mi-app-html:latest
           ports:
             - containerPort: 80
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 9999      # puerto incorrecto para forzar fallo
-            initialDelaySeconds: 2
-            periodSeconds: 3
