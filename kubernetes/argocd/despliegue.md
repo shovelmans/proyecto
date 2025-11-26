@@ -11,6 +11,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 kubectl get svc -n argocd
 kubectl get nodes -o wide
 helm uninstall argocd -n argocd
+´´´
 
 ---
 
