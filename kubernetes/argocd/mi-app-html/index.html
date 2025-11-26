@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi App HTML con Argo CD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #111827;
+      padding: 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      text-align: center;
+      max-width: 500px;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 1.8rem;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #9ca3af;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: #1d4ed8;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .footer {
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">Demo DevOps</div>
+    <h1>App HTML desplegada con Argo CD</h1>
+    <h2>Docker Hub → Kubernetes → Argo CD</h2>
+    <p>
+      Si estás viendo esta página, la imagen Docker se ha construido correctamente,
+      se ha subido a Docker Hub y Argo CD la ha desplegado en el clúster.
+    </p>
+    <p class="footer">
+      Powered by Jorge 🌐
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mi-app-html
+  labels:
+    app: mi-app-html
+spec:
+  type: NodePort   # o ClusterIP si tienes Ingress
+  selector:
+    app: mi-app-html
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+      nodePort: 30080   # opcional, puedes dejar que Kubernetes lo asigne

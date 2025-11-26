@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mi-app-html
+  labels:
+    app: mi-app-html
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mi-app-html
+  template:
+    metadata:
+      labels:
+        app: mi-app-html
+    spec:
+      containers:
+        - name: mi-app-html
+          image: TU_USUARIO_DOCKERHUB/mi-app-html:latest
+          ports:
+            - containerPort: 80
