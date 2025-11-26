@@ -1,6 +1,6 @@
 # 🚀 Despliegue rápido de Argo CD con Helm (NodePort)
 
-## 1️⃣ Instalar Argo CD
+## Instalar Argo CD
 
 ```bash
 helm repo add argo https://argoproj.github.io/argo-helm
