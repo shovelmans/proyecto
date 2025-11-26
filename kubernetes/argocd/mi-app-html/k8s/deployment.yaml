@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: mi-app-html
-          image: shovelman/mi-app-html:latest
+          image: shovelman/mi-app-html:latest9
           ports:
             - containerPort: 80
